@@ -34,5 +34,5 @@ steps:
     azureSubscription: 'Azure for Students(82f39621-cbc6-4e65-a9b9-4db2a3575c4f)'
     appType: 'webAppLinux'
     WebAppName: 'excalidraw'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     RuntimeStack: 'NODE|12-lts'
